@@ -1,1 +1,5 @@
 <!ENTITY sogo-connector.tabs.categories.label "Kategorien">
+<!ENTITY inverse.CalDAV.tab "Kalender">
+<!ENTITY inverse.FbUrl.label "Frei/Gebucht URL:">
+<!ENTITY inverse.CalUrl.label "Kalender URL:">
+<!ENTITY inverse.CalUseTemplates.label "URL Templates Verwenden">

@@ -18,6 +18,7 @@
 
   <tabs id="abTabs">
     <tab insertbefore="homeTabButton" id="categoriesTabButton" label="&sogo-connector.tabs.categories.label;"/>
+    <tab insertbefore="otherTabButton" id="calDavTabButton" label="&inverse.CalDAV.tab;"/>
   </tabs>
   <tabpanels id="abTabPanels">
     <vbox id="abCategoriesTab" flex="0" style="max-height: 200px; overflow-y: auto;" insertbefore="abHomeTab">
@@ -25,5 +26,27 @@
       </vbox>
       <textbox id="abEmptyCategory" readonly="true"/>
     </vbox>
+    <vbox id="abCalDavTab" flex="0" style="max-height: 200px; overflow-y: auto; align-items: baseline;" insertbefore="abOtherTab">
+      <grid>
+        <columns>
+          <column/>
+          <column flex="1"/>
+        </columns>
+        <rows>
+          <row>
+            <label value="&inverse.FbUrl.label;" class="CardEditLabel" flex="0"/>
+            <textbox id="FbUrl" flex="1"/>
+          </row>
+          <row>
+            <label value="&inverse.CalUrl.label;" class="CardEditLabel" flex="0"/>
+            <textbox id="CalUrl" flex="1"/>            
+          </row>
+          <row>
+            <label/>
+            <checkbox label="&inverse.CalUseTemplates.label;" checked="true"/>
+          </row>
+        </rows>
+      </grid>
+    </vbox>    
   </tabpanels>
 </overlay>
